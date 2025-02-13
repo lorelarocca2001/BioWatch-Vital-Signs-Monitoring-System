@@ -1,0 +1,7 @@
+kafka-python-ng
+confluent_kafka
+httpx
+requests
+pandas
+vitaldb
+pytz
