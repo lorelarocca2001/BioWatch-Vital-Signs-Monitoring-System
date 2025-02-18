@@ -49,7 +49,7 @@ if response.status_code == 200:
     # Create a DataFrame with extracted clinical data
     clinical_df = pd.DataFrame(filtered_data)
     
-    # Define track names for vital signs
+    # List of vital sign parameters to extract and their originating device 
     track_names = [
         'Solar8000/ART_DBP', 'Solar8000/ART_SBP', 'Solar8000/HR', 
         'Solar8000/BT', 'Solar8000/VENT_RR', 'Solar8000/PLETH_SPO2'
