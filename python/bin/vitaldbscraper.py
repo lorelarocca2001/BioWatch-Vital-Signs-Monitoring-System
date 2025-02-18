@@ -104,7 +104,7 @@ if response.status_code == 200:
     # Round 'Body Temperature' to one decimal place
     filtered_samples['Body Temperature'] = filtered_samples['Body Temperature'].apply(lambda x: round(x, 1))
     
-    # Convert other numeric columns to integers (except specific ones)
+    # Convert numeric columns to integers (except specific ones)
     for col in filtered_samples.columns:
         if col not in ['Body Temperature', 'Weight', 'Height'] and filtered_samples[col].dtype in ['float64', 'float32']:
             filtered_samples[col] = filtered_samples[col].round(0).astype(int)
